@@ -1,0 +1,102 @@
+/* reset semua */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(206, 193, 177);
+    line-height: 1,5;
+    padding-bottom: 1000px;
+}
+
+/* container1 */
+.container1{
+    width: 800px;
+    /* margin = 50 kanan kiri, auto atas bawah(50(t),50(b),50(l),50(r)) */
+    margin: 50px auto;
+    background-color:#ffff;
+    padding: 20px;
+    /* display: flex; */
+    border-radius: 25px;
+}
+
+.kolom-utama{
+    order: 2 ;
+    flex: 3;
+}
+.sidebar.satu {
+    order: 1;
+    flex: 1 ;
+}
+.sidebar.dua{
+    order: 3;
+    flex: 1;
+}
+
+
+
+/* latihan2 */
+.container2{
+    max-width: 800px;
+    margin: 50px auto;
+    /* display: flex;        pindah ke reponsive */
+    /* justify-content: space-between; */
+}
+
+.layanan{
+    /* width: 30%;          pindah ke responsive */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+.layanan.satu{
+    background-color: brown;
+}
+
+.layanan.dua{
+    background-color: burlywood;
+}
+
+.layanan.tiga{
+    background-color: aquamarine;
+}
+
+
+/* latian 3 gambar */
+
+.container3{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.thumbnile{
+    width: 50%;
+}
+.thumbnile img{
+    width: 100%;
+}
+/* responsive */
+@media (min-width: 650px ) 
+{
+    .container2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .layanan{
+        width: 30%;
+    }
+    .container1{
+        display: flex;
+    }
+    .sidebar{
+        width: 30%;
+    }
+    .thumbnile{
+        width: 25%;
+    }
+
+}
